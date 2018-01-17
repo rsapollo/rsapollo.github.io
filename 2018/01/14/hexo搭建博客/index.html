@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="前提条件1//安装Git和Node.js，如果是Mac用户需要先安装Xcode">
+<meta name="description" content="1、安装hexo准备工作 已安装Git 已安装Node.js 如果是Mac用户还需要安装了Xcode，并且安装了Command Line Tools  我的目前环境如下：1234567//检查git版本，如果显示命令没有找到或者其他错误表示并没有安装完成$ git --versiongit version 2.13.6 (Apple Git-96)//检查node.js版本，如果显示命令没有找到或">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo搭建博客">
 <meta property="og:url" content="http://yoursite.com/2018/01/14/hexo搭建博客/index.html">
 <meta property="og:site_name" content="邓朋芳随笔">
-<meta property="og:description" content="前提条件1//安装Git和Node.js，如果是Mac用户需要先安装Xcode">
+<meta property="og:description" content="1、安装hexo准备工作 已安装Git 已安装Node.js 如果是Mac用户还需要安装了Xcode，并且安装了Command Line Tools  我的目前环境如下：1234567//检查git版本，如果显示命令没有找到或者其他错误表示并没有安装完成$ git --versiongit version 2.13.6 (Apple Git-96)//检查node.js版本，如果显示命令没有找到或">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-14T12:38:53.919Z">
+<meta property="og:updated_time" content="2018-01-17T08:36:16.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建博客">
-<meta name="twitter:description" content="前提条件1//安装Git和Node.js，如果是Mac用户需要先安装Xcode">
+<meta name="twitter:description" content="1、安装hexo准备工作 已安装Git 已安装Node.js 如果是Mac用户还需要安装了Xcode，并且安装了Command Line Tools  我的目前环境如下：1234567//检查git版本，如果显示命令没有找到或者其他错误表示并没有安装完成$ git --versiongit version 2.13.6 (Apple Git-96)//检查node.js版本，如果显示命令没有找到或">
 
 
 
@@ -299,7 +299,26 @@
       
 
       
-        <h4 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//安装Git和Node.js，如果是Mac用户需要先安装Xcode</span><br></pre></td></tr></table></figure>
+        <h3 id="1、安装hexo准备工作"><a href="#1、安装hexo准备工作" class="headerlink" title="1、安装hexo准备工作"></a>1、安装hexo准备工作</h3><ul>
+<li>已安装Git</li>
+<li>已安装Node.js</li>
+<li>如果是Mac用户还需要安装了Xcode，并且安装了Command Line Tools</li>
+</ul>
+<p>我的目前环境如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//检查git版本，如果显示命令没有找到或者其他错误表示并没有安装完成</span><br><span class="line">$ git --version</span><br><span class="line">git version 2.13.6 (Apple Git-96)</span><br><span class="line"></span><br><span class="line">//检查node.js版本，如果显示命令没有找到或者其他错误，表示没有安装成功</span><br><span class="line">$ node --version</span><br><span class="line">v9.2.1</span><br></pre></td></tr></table></figure></p>
+<h3 id="2、安装hexo"><a href="#2、安装hexo" class="headerlink" title="2、安装hexo"></a>2、安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ cd blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>以上命令如果输入完成后，访问<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，将出现hexo的默认主页（如果没有出现，表示安装出现了问题）</p>
+<h3 id="3、hexo配置"><a href="#3、hexo配置" class="headerlink" title="3、hexo配置"></a>3、hexo配置</h3><h4 id="3-1-换皮肤"><a href="#3-1-换皮肤" class="headerlink" title="3.1 换皮肤"></a>3.1 换皮肤</h4><p>在blog（这个是hexo init blog，创建的名字，如果你是其他的目录名称，就在你自己创建的目录下，一下不再赘述，根目录就是表示blog目录）根目录下，进入themes目录，目前只有一个主题landscape，我们要换的就是目前GitHub上star最高的next主题<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a>，此时我们在根目录执行如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+<p>此时在themes目录下多了一个next文件夹，然后在根目录下找到 _config.yml 配置文件找到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">theme: landscape </span><br><span class="line">改为</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
+<p>至此，主题已经更改完成，next主题也有几种样式，在themes目录next目录下，打开_config.yml配置文件，如下我使用的是Pisces样式，其他样式可自行测试使用，打开前面的#号即可启用该样式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line"># scheme: Muse</span><br><span class="line"># scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line"># scheme: Gemini</span><br></pre></td></tr></table></figure></p>
+<h3 id="4、关联GitHub，发布博客到GitHub上"><a href="#4、关联GitHub，发布博客到GitHub上" class="headerlink" title="4、关联GitHub，发布博客到GitHub上"></a>4、关联GitHub，发布博客到GitHub上</h3><p>在根目录下，打开_config.yml，找到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: </span><br><span class="line">  repository: </span><br><span class="line"></span><br><span class="line">改为如下（其中yourname表示你的GitHub的用户名）</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line">//然后运行如下命令：</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>配置SSH，打开GitHub，在个人设置中 Settings -&gt; SSH and GPG keys -&gt; New SSH key<br>需要填写一个Title 和 Key</p>
+<ul>
+<li>title可以随便取，比如你的电脑名字</li>
+<li>Key是从rsa的公钥<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//在家目录中，看看有没有.ssh目录（没有就创建该目录），如果有看看里面有没有id_rsa和id_rsa.pub，如果没有则表示还没有Key需要创建，在.ssh目录下执行，其中youemail就是注册github的email</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;youremail@yourcompany.com&quot; //一路回车就可以生成id_rsa和id_rsa.pub</span><br><span class="line"></span><br><span class="line">//添加私钥</span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line">//可以通过 ssh-add -l 来确私钥列表</span><br><span class="line">$ ssh-add -l</span><br><span class="line">//可以通过 ssh-add -D 来清空私钥列表</span><br><span class="line">$ ssh-add -D</span><br><span class="line"></span><br><span class="line">$ pbcopy &lt; id_rsa.pub //这个命令就是复制id_rsa.pub里面的内容，打开文件ctrl + c（或者cmd + c）也可以</span><br><span class="line"></span><br><span class="line">//回到GitHub上，ctrl + v （cmd + v）粘贴到Key里面保存即可</span><br><span class="line"></span><br><span class="line">//测试是否与GitHub连接成功</span><br><span class="line">ssh -T git@github.com</span><br><span class="line">如果出现了下面这一句就表示成功：</span><br><span class="line">Hi yourname! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>至此，连接GitHub也就成功了。</p>
+<h3 id="发布到GitHub"><a href="#发布到GitHub" class="headerlink" title="发布到GitHub"></a>发布到GitHub</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -400,25 +419,7 @@
             
 
             
-              
-              
-              <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">分类</span>
-                
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
             
 
           </nav>
@@ -448,7 +449,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前提条件"><span class="nav-number">1.</span> <span class="nav-text">前提条件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、安装hexo准备工作"><span class="nav-number">1.</span> <span class="nav-text">1、安装hexo准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、安装hexo"><span class="nav-number">2.</span> <span class="nav-text">2、安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、hexo配置"><span class="nav-number">3.</span> <span class="nav-text">3、hexo配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-换皮肤"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 换皮肤</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、关联GitHub，发布博客到GitHub上"><span class="nav-number">4.</span> <span class="nav-text">4、关联GitHub，发布博客到GitHub上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布到GitHub"><span class="nav-number">5.</span> <span class="nav-text">发布到GitHub</span></a></li></ol></div>
             
 
           </div>
