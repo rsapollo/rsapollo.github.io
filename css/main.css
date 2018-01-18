@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #f5f7f9;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -277,15 +277,15 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #555;
+  color: #0593d3;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid #999;
   word-wrap: break-word;
 }
 a:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #0477ab;
+  border-bottom-color: #0477ab;
 }
 blockquote {
   margin: 0;
@@ -445,7 +445,7 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 700px;
+  width: 810px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -457,7 +457,7 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 810px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
@@ -474,7 +474,7 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 700px;
+  width: 810px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
@@ -486,29 +486,29 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
-  color: #4d4d4c;
-  background: #f7f7f7;
+  font-size: 15px;
+  color: #fff;
+  background: #002451;
   line-height: 1.6;
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: 'PT Mono', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
   padding: 2px 4px;
   word-wrap: break-word;
-  color: #555;
+  color: #d05;
   background: #eee;
-  border-radius: 3px;
-  font-size: 13px;
+  border-radius: 4px;
+  font-size: 15px;
 }
 pre {
   padding: 10px;
 }
 pre code {
   padding: 0;
-  color: #4d4d4c;
+  color: #fff;
   background: none;
   text-shadow: none;
 }
@@ -531,7 +531,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 1em;
-  color: #4d4d4c;
+  color: #fff;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -545,23 +545,23 @@ pre code {
 }
 .highlight figcaption a {
   float: right;
-  color: #4d4d4c;
+  color: #fff;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: #fff;
 }
 .highlight .gutter pre {
   padding-left: 10px;
   padding-right: 10px;
-  color: #869194;
+  color: #7285b7;
   text-align: right;
-  background-color: #eff2f3;
+  background-color: #000e20;
 }
 .highlight .code pre {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #f7f7f7;
+  background-color: #002451;
 }
 .highlight .line {
   height: 20px;
@@ -579,16 +579,16 @@ pre code {
   border: none;
 }
 pre .deletion {
-  background: #fdd;
+  background: #008000;
 }
 pre .addition {
-  background: #dfd;
+  background: #800000;
 }
 pre .meta {
-  color: #8959a8;
+  color: #ebbbff;
 }
 pre .comment {
-  color: #8e908c;
+  color: #7285b7;
 }
 pre .variable,
 pre .attribute,
@@ -602,7 +602,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #ff9da4;
 }
 pre .number,
 pre .preprocessor,
@@ -611,7 +611,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #ffc58f;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -624,11 +624,11 @@ pre .xml .cdata,
 pre .special,
 pre .number,
 pre .formula {
-  color: #718c00;
+  color: #d1f1a9;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #9ff;
 }
 pre .function,
 pre .python .decorator,
@@ -638,11 +638,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #bbdaff;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #ebbbff;
 }
 .full-image.full-image.full-image.full-image {
   border: none;
@@ -921,7 +921,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab.active a {
   cursor: default;
-  color: #555;
+  color: #0593d3;
 }
 .post-body .tabs .tab-content {
   background-color: #fff;
@@ -1131,7 +1131,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 20px;
   font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lobster Two', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1238,7 +1238,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1270,7 +1270,7 @@ pre .javascript .function {
 .posts-expand {
   padding-top: 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1080px) {
   .posts-expand {
     margin: 0 20px;
   }
@@ -1578,11 +1578,11 @@ pre .javascript .function {
   display: block;
   line-height: 25px;
   font-size: 14px;
-  color: #555;
+  color: #0593d3;
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #222;
+  color: #0477ab;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6fe36a;
+  background: #1d8221;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2599,7 +2599,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 960px;
+  width: 1080px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2659,7 +2659,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 960px;
+  width: 1080px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
@@ -2675,7 +2675,7 @@ pre .javascript .function {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: 700px;
+  width: 810px;
   background: #fff;
   min-height: 700px;
   box-shadow: initial;
@@ -2718,7 +2718,7 @@ pre .javascript .function {
   display: none;
 }
 .footer-inner {
-  width: 960px;
+  width: 1080px;
   padding-left: 260px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
